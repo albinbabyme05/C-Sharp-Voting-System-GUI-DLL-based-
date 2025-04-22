@@ -1,0 +1,87 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+bin/
+obj/
+[Ll]og/
+[Bb]uild/
+TestResults/
+*.exe
+*.dll
+*.app
+*.msi
+*.nupkg
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# VS Code workspace
+.vscode/
+
+# Visual Studio settings
+.vs/
+*.psess
+*.vsp
+*.vspx
+*.vspscc
+*.vssscc
+
+# Windows image files
+*.pdb
+*.cache
+*.dbmdl
+
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET stuff
+wwwroot/node_modules/
+wwwroot/lib/
+
+# Entity Framework
+Migrations/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Others
+_ReSharper*/
+*.DotSettings.user
+*.orig
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+.cashe
+.targets
+.props
+.json/net8.0
+.exe
+.dll
+.pdb
+
+# Ignore build output
+**/bin/
+**/obj/
+
+# Ignore user-specific files (optional)
+*.user
+*.suo
+
+# Ignore .exe, .dll, .pdb files (covered by bin/obj, but good to be explicit)
+*.exe
+*.dll
+*.pdb
