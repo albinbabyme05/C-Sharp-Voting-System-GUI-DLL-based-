@@ -6,7 +6,39 @@ using System.Threading.Tasks;
 
 namespace Voting_System
 {
-    internal class User
+    public abstract class User
     {
+        private string UserPassWord;
+        private string UserName;
+        
+
+        public User(string userName, string userPassword)
+        {
+            UserName = userName;
+            UserPassWord = userPassword;
+            
+        }
+
+        public string GetVoterName() => UserName;
+        public string GetPassword() => UserPassWord;
+
+
+        public bool Login(string name, string password)
+        {
+            if (UserName == name && UserPassWord == password)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void Logout()
+        {
+            Console.WriteLine($"{UserName} has logged out");
+        }
+
+        public abstract void AccessPortal();
+        
+         
     }
 }
