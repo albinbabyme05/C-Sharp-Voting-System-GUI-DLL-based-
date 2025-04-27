@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Voting_System\Voting_System.csproj" />
+  </ItemGroup>
+
 </Project>

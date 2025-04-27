@@ -19,7 +19,7 @@ namespace Voting_System
             
         }
 
-        public string GetVoterName() => UserName;
+        public string GetUserName() => UserName;
         public string GetPassword() => UserPassWord;
 
 
