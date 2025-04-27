@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Voting_System
 {
+
     public class Voter : User
+
     {
         private bool hasVoted;
         private Guid VoterId;
@@ -25,11 +27,13 @@ namespace Voting_System
             if (hasVoted)
             {
                 Console.WriteLine("You already voted");
+
                 return false;
             }
             Console.WriteLine($"voted successfully to {candidateId}");
             hasVoted = true;
             return true;
+
         }
 
         public override void AccessPortal()

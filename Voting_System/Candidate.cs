@@ -15,6 +15,7 @@ namespace Voting_System
         private int VoteCount;
 
         public Candidate(string name, string party )
+
         {
             Name = name;
             CandidateId = Guid.NewGuid();

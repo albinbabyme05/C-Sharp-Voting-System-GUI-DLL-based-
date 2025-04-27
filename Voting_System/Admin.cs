@@ -7,19 +7,24 @@ using System.Threading.Tasks;
 namespace Voting_System
 {
     public class Admin : User
-    {
+{
         private Guid AdminId;
+
         private Dictionary<Guid, Candidate> CandidateDictionary;
 
         public Admin(string userName, string userPassword) : base(userName, userPassword)
         {
             CandidateDictionary = new Dictionary<Guid, Candidate>();
+
             AdminId = Guid.NewGuid();
+
+
         }
 
         
         public void AddCandidate(Candidate candidate)
         {
+
             if (!CandidateDictionary.ContainsKey(candidate.GetCandidateID()))
             {
                 CandidateDictionary.Add(candidate.GetCandidateID(), candidate);
@@ -29,6 +34,9 @@ namespace Voting_System
                 Console.WriteLine("Candidate already exists.");
             }
 
+
+            CandidateDictionary.Add(candidate.GetCandidateID(), candidate);
+
         }
 
         public void RemoveCandidate(Guid candidateId)
@@ -36,12 +44,14 @@ namespace Voting_System
             if (CandidateDictionary.ContainsKey(candidateId))
             {
                 CandidateDictionary.Remove(candidateId);
+
                 Console.WriteLine("Candidate removed successfully.");
             }
             else
             {
                 Console.WriteLine("Candidate ID not found.");
             }
+
 
 
         }
@@ -61,7 +71,10 @@ namespace Voting_System
         }
         public override void AccessPortal()
         {
+
             Console.WriteLine($"Welcome, Admin {AdminId}! Accessing Admin Dashboard...");
+
+
         }
 
         
